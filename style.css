@@ -1,0 +1,187 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+header {
+    background-color:#173b65;
+    color:white;
+    padding:20px;
+}
+nav a{
+    color:white;
+    text-decoration: none;
+    margin-right:15px;
+}
+.hero {
+    background-color: #eaf2ff;
+    padding: 70px 40px;
+    text-align: center;
+}
+.intro {
+    color:#245b99;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.hero h2 {
+    color:#173b65;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+.hero h3 {
+    color: #3574b8;
+    margin-bottom: 15px;
+}
+.hero p {
+    margin-bottom: 20px;
+}
+.btn {
+    display: inline-block;
+    background-color: #245b99;
+    color: white;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 6px;
+}
+.btn:hover {
+    background-color: #173b65;
+}
+.about {
+    background-color: #eaf2ff;
+    padding: 40px 20px;
+    text-align: center;
+}
+.about h2 {
+    color: #173b65
+}
+.about p {
+    color: #333333;
+    line-height: 1.8;
+}
+
+.skills {
+    background-color: #f4f8ff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.skills h2 {
+    color: #173b65;
+    margin-bottom: 25px;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.skill-card {
+    background-color: #245b99;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 6px;
+}
+
+.skill-card:hover {
+    background-color: #173b65;
+}
+
+.projects {
+    background-color: #eaf2ff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.projects h2 {
+    color: #173b65;
+    margin-bottom: 25px;
+}
+
+.projects-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.project-card {
+    background-color: white;
+    padding: 20px;
+    width: 280px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px #cccccc;
+}
+
+.project-card h3 {
+    color: #245b99;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.contact {
+    background-color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.contact h2 {
+    color: #173b65;
+    margin-bottom: 20px;
+}
+
+.contact p {
+    color: #333333;
+    line-height: 1.8;
+}
+
+.contact a {
+    color: #245b99;
+    text-decoration: none;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #173b65;
+    color: white;
+    text-align: center;
+    padding: 18px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Make the portfolio responsive */
+@media (max-width: 600px) {
+    nav {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .skills-container,
+    .projects-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skill-card,
+    .project-card {
+        width: 100%;
+        max-width: 280px;
+        box-sizing: border-box;
+    }
+}
